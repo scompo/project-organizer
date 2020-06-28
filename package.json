@@ -1,0 +1,28 @@
+{
+  "name": "project-organizer",
+  "version": "0.0.1",
+  "description": "project organizer",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && jest",
+    "lint": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scompo/project-organizer.git"
+  },
+  "keywords": [
+    "scompo",
+    "projects"
+  ],
+  "author": "Mauro Scomparin <scompo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scompo/project-organizer/issues"
+  },
+  "homepage": "https://github.com/scompo/project-organizer#readme",
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "standard": "^14.3.4"
+  }
+}
