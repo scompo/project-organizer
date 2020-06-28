@@ -4,6 +4,7 @@
   "description": "project organizer",
   "main": "index.js",
   "scripts": {
+    "start":"node src/server.js",
     "test": "standard && jest",
     "lint": "standard --fix"
   },
@@ -24,5 +25,8 @@
   "devDependencies": {
     "jest": "^26.1.0",
     "standard": "^14.3.4"
+  },
+  "dependencies": {
+    "koa": "^2.13.0"
   }
 }
