@@ -1,9 +1,20 @@
-const Koa = require('koa')
+const config = require('./config')
+const app = require('./app')
 
-const app = new Koa()
+async function main () {
+  return Promise.all([
+    config.read(),
+    app()
+  ])
+    .then(([conf, app]) => {
+      return app.listen(conf.server.port)
+    })
+    .then(x => {
+      console.log('Started server')
+      return x
+    })
+}
 
-app.use(async ctx => {
-  ctx.body = 'Hello World'
-})
-
-app.listen(3000)
+main()
+  // .then(console.log)
+  .catch(console.err)

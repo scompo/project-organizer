@@ -6,6 +6,7 @@
   "scripts": {
     "start":"node src/server.js",
     "test": "standard && jest",
+    "coverage": "jest --coverage=true",
     "lint": "standard --fix"
   },
   "repository": {
