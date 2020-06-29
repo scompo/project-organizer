@@ -10,22 +10,22 @@ const app = new Koa()
 const router = new Router()
 
 router.get('/', async ctx => {
-	await ctx.render('home')
+  await ctx.render('home')
 })
 
 const pug = new Pug({
-	viewPath: path.resolve(__dirname, '../views'),
-	app: app
+  viewPath: path.resolve(__dirname, '../views'),
+  app: app
 })
 
 pug.locals.name = 'project-organizer'
 pug.locals.version = require('../package.json').version
 
 app.use(logger())
-	.use(mount('/static', serve('./static')))
-	.use(router.routes())
-	.use(router.allowedMethods())
+  .use(mount('/static', serve('./static')))
+  .use(router.routes())
+  .use(router.allowedMethods())
 
 module.exports = async function () {
-	return app
+  return app
 }
