@@ -23,6 +23,6 @@ app.use(logger())
   .use(router.routes())
   .use(router.allowedMethods())
 
-module.exports = async function (conf) {
+module.exports = async function () {
   return app
 }
