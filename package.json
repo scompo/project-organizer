@@ -4,7 +4,7 @@
   "description": "project organizer",
   "main": "index.js",
   "scripts": {
-    "start":"node src/server.js",
+    "start": "node src/server.js",
     "test": "standard && jest",
     "coverage": "jest --coverage=true",
     "lint": "standard --fix"
@@ -28,6 +28,7 @@
     "standard": "^14.3.4"
   },
   "dependencies": {
-    "koa": "^2.13.0"
+    "koa": "^2.13.0",
+    "koa-pug": "^4.0.4"
   }
 }
