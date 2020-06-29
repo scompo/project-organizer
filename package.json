@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
+    "start-dev": "node src/server.js | pino-pretty",
     "test": "standard && jest",
     "coverage": "jest --coverage=true",
     "lint": "standard --fix"
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/scompo/project-organizer#readme",
   "devDependencies": {
     "jest": "^26.1.0",
+    "pino-pretty": "^4.0.0",
     "standard": "^14.3.4"
   },
   "dependencies": {
